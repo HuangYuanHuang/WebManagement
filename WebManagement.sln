@@ -1,0 +1,111 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebUI", "WebUI", "{1D6A475D-0C04-4A73-A653-F0DC662A2783}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebHost", "WebHost", "{35C1693D-879F-41BA-93F9-2CC079E62693}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{304E0B39-19BE-4B35-842F-68ECA840DBAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventCloud", "EventCloud", "{B20A77A8-60D8-4699-9D66-7D1A263DC96D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hyhrobot.WebManagement.AngularUI", "WebUI\Hyhrobot.WebManagement.AngularUI.csproj", "{78C4542B-B161-4EC2-AD67-02706594B701}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{083E4051-8B3F-49C7-9FC1-05494234D0E6}"
+	ProjectSection(SolutionItems) = preProject
+		Build\build\build-with-ng.ps1 = Build\build\build-with-ng.ps1
+		Build\docker\ng\docker-compose.yml = Build\docker\ng\docker-compose.yml
+		Build\docker\ng\down.ps1 = Build\docker\ng\down.ps1
+		Build\docker\ng\up.ps1 = Build\docker\ng\up.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{3C8064E9-7203-4B3D-A5FB-08C558652A07}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hyhrobot.WebManagement.Tests", "Test\Hyhrobot.WebManagement.Tests\Hyhrobot.WebManagement.Tests.csproj", "{AFEF1122-7806-473A-A631-8409EBA60C6A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hyhrobot.WebManagement.Application", "WebHost\Core\Hyhrobot.WebManagement.Application\Hyhrobot.WebManagement.Application.csproj", "{14427725-35F2-4050-8FC0-49547E20FD5F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hyhrobot.WebManagement.Core", "WebHost\Core\Hyhrobot.WebManagement.Core\Hyhrobot.WebManagement.Core.csproj", "{80BAF100-8F61-4F4B-9DBA-88A0810F35FF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hyhrobot.WebManagement.EntityFrameworkCore", "WebHost\Core\Hyhrobot.WebManagement.EntityFrameworkCore\Hyhrobot.WebManagement.EntityFrameworkCore.csproj", "{CADF2CE3-8941-4E22-B78E-BEC9A057B666}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hyhrobot.WebManagement.Migrator", "WebHost\Core\Hyhrobot.WebManagement.Migrator\Hyhrobot.WebManagement.Migrator.csproj", "{5EF976DD-65CF-4562-9343-35C863E888DD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hyhrobot.WebManagement.Web.Core", "WebHost\Core\Hyhrobot.WebManagement.Web.Core\Hyhrobot.WebManagement.Web.Core.csproj", "{68C9D4FC-D933-4156-853C-BC9AAA1162CF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hyhrobot.WebManagement.Web.Host", "WebHost\Core\Hyhrobot.WebManagement.Web.Host\Hyhrobot.WebManagement.Web.Host.csproj", "{D4251AC5-C78C-4A51-92D5-DD5739EE70A4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hyhrobot.EventCloud.Core", "WebHost\EventCloud\Hyhrobot.EventCloud.Core\Hyhrobot.EventCloud.Core.csproj", "{5876A9BE-97B1-4DDC-8B66-25373533E3A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hyhrobot.EventCloud.Application", "WebHost\EventCloud\Hyhrobot.EventCloud.Application\Hyhrobot.EventCloud.Application.csproj", "{4B4D738D-BD4F-4292-8319-6FEBCED70CE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78C4542B-B161-4EC2-AD67-02706594B701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78C4542B-B161-4EC2-AD67-02706594B701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78C4542B-B161-4EC2-AD67-02706594B701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78C4542B-B161-4EC2-AD67-02706594B701}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFEF1122-7806-473A-A631-8409EBA60C6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFEF1122-7806-473A-A631-8409EBA60C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFEF1122-7806-473A-A631-8409EBA60C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFEF1122-7806-473A-A631-8409EBA60C6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14427725-35F2-4050-8FC0-49547E20FD5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14427725-35F2-4050-8FC0-49547E20FD5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14427725-35F2-4050-8FC0-49547E20FD5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14427725-35F2-4050-8FC0-49547E20FD5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80BAF100-8F61-4F4B-9DBA-88A0810F35FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80BAF100-8F61-4F4B-9DBA-88A0810F35FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80BAF100-8F61-4F4B-9DBA-88A0810F35FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80BAF100-8F61-4F4B-9DBA-88A0810F35FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CADF2CE3-8941-4E22-B78E-BEC9A057B666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CADF2CE3-8941-4E22-B78E-BEC9A057B666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CADF2CE3-8941-4E22-B78E-BEC9A057B666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CADF2CE3-8941-4E22-B78E-BEC9A057B666}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EF976DD-65CF-4562-9343-35C863E888DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EF976DD-65CF-4562-9343-35C863E888DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EF976DD-65CF-4562-9343-35C863E888DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EF976DD-65CF-4562-9343-35C863E888DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68C9D4FC-D933-4156-853C-BC9AAA1162CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68C9D4FC-D933-4156-853C-BC9AAA1162CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68C9D4FC-D933-4156-853C-BC9AAA1162CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68C9D4FC-D933-4156-853C-BC9AAA1162CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4251AC5-C78C-4A51-92D5-DD5739EE70A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4251AC5-C78C-4A51-92D5-DD5739EE70A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4251AC5-C78C-4A51-92D5-DD5739EE70A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4251AC5-C78C-4A51-92D5-DD5739EE70A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5876A9BE-97B1-4DDC-8B66-25373533E3A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5876A9BE-97B1-4DDC-8B66-25373533E3A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5876A9BE-97B1-4DDC-8B66-25373533E3A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5876A9BE-97B1-4DDC-8B66-25373533E3A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B4D738D-BD4F-4292-8319-6FEBCED70CE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B4D738D-BD4F-4292-8319-6FEBCED70CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B4D738D-BD4F-4292-8319-6FEBCED70CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B4D738D-BD4F-4292-8319-6FEBCED70CE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{304E0B39-19BE-4B35-842F-68ECA840DBAF} = {35C1693D-879F-41BA-93F9-2CC079E62693}
+		{B20A77A8-60D8-4699-9D66-7D1A263DC96D} = {35C1693D-879F-41BA-93F9-2CC079E62693}
+		{78C4542B-B161-4EC2-AD67-02706594B701} = {1D6A475D-0C04-4A73-A653-F0DC662A2783}
+		{AFEF1122-7806-473A-A631-8409EBA60C6A} = {3C8064E9-7203-4B3D-A5FB-08C558652A07}
+		{14427725-35F2-4050-8FC0-49547E20FD5F} = {304E0B39-19BE-4B35-842F-68ECA840DBAF}
+		{80BAF100-8F61-4F4B-9DBA-88A0810F35FF} = {304E0B39-19BE-4B35-842F-68ECA840DBAF}
+		{CADF2CE3-8941-4E22-B78E-BEC9A057B666} = {304E0B39-19BE-4B35-842F-68ECA840DBAF}
+		{5EF976DD-65CF-4562-9343-35C863E888DD} = {304E0B39-19BE-4B35-842F-68ECA840DBAF}
+		{68C9D4FC-D933-4156-853C-BC9AAA1162CF} = {304E0B39-19BE-4B35-842F-68ECA840DBAF}
+		{D4251AC5-C78C-4A51-92D5-DD5739EE70A4} = {304E0B39-19BE-4B35-842F-68ECA840DBAF}
+		{5876A9BE-97B1-4DDC-8B66-25373533E3A8} = {B20A77A8-60D8-4699-9D66-7D1A263DC96D}
+		{4B4D738D-BD4F-4292-8319-6FEBCED70CE4} = {B20A77A8-60D8-4699-9D66-7D1A263DC96D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54EBF95C-7121-4A6A-8FFD-FE0B2D2F408A}
+	EndGlobalSection
+EndGlobal

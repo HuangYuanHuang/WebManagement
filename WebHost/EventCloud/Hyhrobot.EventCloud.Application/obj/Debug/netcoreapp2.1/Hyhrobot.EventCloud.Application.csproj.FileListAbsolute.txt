@@ -1,0 +1,8 @@
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\EventCloud\Hyhrobot.EventCloud.Application\bin\Debug\netcoreapp2.1\Hyhrobot.EventCloud.Application.deps.json
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\EventCloud\Hyhrobot.EventCloud.Application\bin\Debug\netcoreapp2.1\Hyhrobot.EventCloud.Application.dll
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\EventCloud\Hyhrobot.EventCloud.Application\bin\Debug\netcoreapp2.1\Hyhrobot.EventCloud.Application.pdb
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\EventCloud\Hyhrobot.EventCloud.Application\obj\Debug\netcoreapp2.1\Hyhrobot.EventCloud.Application.csproj.CoreCompileInputs.cache
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\EventCloud\Hyhrobot.EventCloud.Application\obj\Debug\netcoreapp2.1\Hyhrobot.EventCloud.Application.AssemblyInfoInputs.cache
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\EventCloud\Hyhrobot.EventCloud.Application\obj\Debug\netcoreapp2.1\Hyhrobot.EventCloud.Application.AssemblyInfo.cs
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\EventCloud\Hyhrobot.EventCloud.Application\obj\Debug\netcoreapp2.1\Hyhrobot.EventCloud.Application.dll
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\EventCloud\Hyhrobot.EventCloud.Application\obj\Debug\netcoreapp2.1\Hyhrobot.EventCloud.Application.pdb

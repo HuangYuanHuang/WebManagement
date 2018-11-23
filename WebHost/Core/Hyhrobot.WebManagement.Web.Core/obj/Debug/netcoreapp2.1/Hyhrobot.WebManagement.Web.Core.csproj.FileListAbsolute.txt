@@ -1,0 +1,17 @@
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Web.Core\bin\Debug\netcoreapp2.1\Hyhrobot.WebManagement.Web.Core.deps.json
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Web.Core\bin\Debug\netcoreapp2.1\Hyhrobot.WebManagement.Web.Core.dll
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Web.Core\bin\Debug\netcoreapp2.1\Hyhrobot.WebManagement.Web.Core.pdb
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Web.Core\bin\Debug\netcoreapp2.1\Hyhrobot.WebManagement.Application.dll
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Web.Core\bin\Debug\netcoreapp2.1\Hyhrobot.WebManagement.Core.dll
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Web.Core\bin\Debug\netcoreapp2.1\Hyhrobot.WebManagement.EntityFrameworkCore.dll
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Web.Core\bin\Debug\netcoreapp2.1\Hyhrobot.WebManagement.Application.pdb
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Web.Core\bin\Debug\netcoreapp2.1\Hyhrobot.WebManagement.EntityFrameworkCore.pdb
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Web.Core\bin\Debug\netcoreapp2.1\Hyhrobot.WebManagement.EntityFrameworkCore.dll.config
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Web.Core\bin\Debug\netcoreapp2.1\Hyhrobot.WebManagement.Core.pdb
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Web.Core\obj\Debug\netcoreapp2.1\Hyhrobot.WebManagement.Web.Core.csprojAssemblyReference.cache
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Web.Core\obj\Debug\netcoreapp2.1\Hyhrobot.WebManagement.Web.Core.csproj.CoreCompileInputs.cache
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Web.Core\obj\Debug\netcoreapp2.1\Hyhrobot.WebManagement.Web.Core.AssemblyInfoInputs.cache
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Web.Core\obj\Debug\netcoreapp2.1\Hyhrobot.WebManagement.Web.Core.AssemblyInfo.cs
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Web.Core\obj\Debug\netcoreapp2.1\Hyhrobot.WebManagement.Web.Core.csproj.CopyComplete
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Web.Core\obj\Debug\netcoreapp2.1\Hyhrobot.WebManagement.Web.Core.dll
+E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Web.Core\obj\Debug\netcoreapp2.1\Hyhrobot.WebManagement.Web.Core.pdb
