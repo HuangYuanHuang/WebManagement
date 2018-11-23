@@ -250,3 +250,5 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+/WebHost/EventCloud/Hyhrobot.EventCloud.Core/bin
+.vs/WebManagemet/v15

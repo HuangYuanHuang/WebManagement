@@ -39,7 +39,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hyhrobot.WebManagement.Web.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hyhrobot.EventCloud.Core", "WebHost\EventCloud\Hyhrobot.EventCloud.Core\Hyhrobot.EventCloud.Core.csproj", "{5876A9BE-97B1-4DDC-8B66-25373533E3A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hyhrobot.EventCloud.Application", "WebHost\EventCloud\Hyhrobot.EventCloud.Application\Hyhrobot.EventCloud.Application.csproj", "{4B4D738D-BD4F-4292-8319-6FEBCED70CE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hyhrobot.EventCloud.Application", "WebHost\EventCloud\Hyhrobot.EventCloud.Application\Hyhrobot.EventCloud.Application.csproj", "{4B4D738D-BD4F-4292-8319-6FEBCED70CE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6F693660-C300-4699-8984-E95B5742334D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
