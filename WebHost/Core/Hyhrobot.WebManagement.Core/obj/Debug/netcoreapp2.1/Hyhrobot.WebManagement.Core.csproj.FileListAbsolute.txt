@@ -1,7 +1,6 @@
 E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Core\bin\Debug\netcoreapp2.1\Hyhrobot.WebManagement.Core.deps.json
 E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Core\bin\Debug\netcoreapp2.1\Hyhrobot.WebManagement.Core.dll
 E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Core\bin\Debug\netcoreapp2.1\Hyhrobot.WebManagement.Core.pdb
-E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Core\obj\Debug\netcoreapp2.1\Hyhrobot.WebManagement.Core.csprojAssemblyReference.cache
 E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Core\obj\Debug\netcoreapp2.1\Hyhrobot.WebManagement.Core.csproj.CoreCompileInputs.cache
 E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Core\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Core\obj\Debug\netcoreapp2.1\Hyhrobot.WebManagement.Core.AssemblyInfoInputs.cache

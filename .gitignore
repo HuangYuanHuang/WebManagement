@@ -1,0 +1,14 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/WebHost/EventCloud/Hyhrobot.EventCloud.Core/obj/
+/WebHost/EventCloud/Hyhrobot.EventCloud.Core/bin/
+
+/WebHost/Core/Hyhrobot.WebManagement.Web.Core/obj
+/WebHost/Core/Hyhrobot.WebManagement.Web.Host/bin
+/WebHost/Core/Hyhrobot.WebManagement.Web.Application/bin
+/WebHost/Core/Hyhrobot.WebManagement.Web.Application/obj
+
+
+.vs/
