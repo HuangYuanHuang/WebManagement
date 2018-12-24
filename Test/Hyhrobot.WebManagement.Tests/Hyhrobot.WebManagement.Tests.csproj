@@ -11,10 +11,6 @@
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Hyhrobot.WebManagement.Application\Hyhrobot.WebManagement.Application.csproj" />
-    <ProjectReference Include="..\..\src\Hyhrobot.WebManagement.EntityFrameworkCore\Hyhrobot.WebManagement.EntityFrameworkCore.csproj" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
     <PackageReference Include="NSubstitute" Version="3.1.0" />
     <PackageReference Include="Shouldly" Version="3.0.2" />
@@ -27,6 +23,11 @@
     <PackageReference Include="Abp.TestBase" Version="4.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.1.4" />
     <PackageReference Include="Castle.Core" Version="4.3.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\WebHost\Core\Hyhrobot.WebManagement.Application\Hyhrobot.WebManagement.Application.csproj" />
+    <ProjectReference Include="..\..\WebHost\Core\Hyhrobot.WebManagement.Core\Hyhrobot.WebManagement.Core.csproj" />
+    <ProjectReference Include="..\..\WebHost\Core\Hyhrobot.WebManagement.EntityFrameworkCore\Hyhrobot.WebManagement.EntityFrameworkCore.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="appsettings.json">

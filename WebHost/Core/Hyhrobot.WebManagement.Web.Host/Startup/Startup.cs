@@ -16,6 +16,8 @@ using Hyhrobot.WebManagement.Configuration;
 using Hyhrobot.WebManagement.Identity;
 
 using Abp.AspNetCore.SignalR.Hubs;
+using Swashbuckle.AspNetCore.SwaggerGen;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Hyhrobot.WebManagement.Web.Host.Startup
 {
@@ -61,10 +63,26 @@ namespace Hyhrobot.WebManagement.Web.Host.Startup
             );
 
             // Swagger - Enable this line and the related lines in Configure method to enable swagger UI
+
             services.AddSwaggerGen(options =>
             {
+
                 options.SwaggerDoc("v1", new Info { Title = "WebManagement API", Version = "v1" });
-                options.DocInclusionPredicate((docName, description) => true);
+                options.SwaggerDoc("v2", new Info { Title = "Event API", Version = "v2" });
+                //  options.DocInclusionPredicate((docName, description) => true);
+                options.DocInclusionPredicate((docName, apiDesc) =>
+                {
+                    return apiDesc.RelativePath.Contains(docName);
+                    //if (!apiDesc.TryGetMethodInfo(out MethodInfo methodInfo)) return false;
+                    //var versions = methodInfo.DeclaringType
+                    //  .GetCustomAttributes(true)
+                    //  .OfType<ApiVersionAttribute>()
+                    //  .SelectMany(attr => attr.Versions);
+
+                    //return versions.Any(v => $"v{v.ToString()}" == docName);
+                });
+                //  options.OperationFilter<SwaggerOperationFilter>();
+                // options.DocumentFilter<ApplyTagDescriptions>();
 
                 // Define the BearerAuth scheme that's in use
                 options.AddSecurityDefinition("bearerAuth", new ApiKeyScheme()
@@ -120,6 +138,8 @@ namespace Hyhrobot.WebManagement.Web.Host.Startup
             app.UseSwaggerUI(options =>
             {
                 options.SwaggerEndpoint(_appConfiguration["App:ServerRootAddress"].EnsureEndsWith('/') + "swagger/v1/swagger.json", "WebManagement API V1");
+                options.SwaggerEndpoint(_appConfiguration["App:ServerRootAddress"].EnsureEndsWith('/') + "swagger/v2/swagger.json", "Event API V2");
+
                 options.IndexStream = () => Assembly.GetExecutingAssembly()
                     .GetManifestResourceStream("Hyhrobot.WebManagement.Web.Host.wwwroot.swagger.ui.index.html");
             }); // URL: /swagger

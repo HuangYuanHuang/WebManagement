@@ -253,3 +253,4 @@ paket-files/
 *.sln.iml
 /WebHost/EventCloud/Hyhrobot.EventCloud.Core/bin
 .vs/WebManagemet/v15/
+/WebHost/Core/Hyhrobot.WebManagement.Web.Host/App_Data/Logs/Logs.txt

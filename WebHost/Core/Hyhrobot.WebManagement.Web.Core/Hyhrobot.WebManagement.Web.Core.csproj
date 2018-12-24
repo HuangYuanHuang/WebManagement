@@ -16,6 +16,7 @@
     <RootNamespace>Hyhrobot.WebManagement</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\EventCloud\Hyhrobot.EventCloud.Application\Hyhrobot.EventCloud.Application.csproj" />
     <ProjectReference Include="..\Hyhrobot.WebManagement.Application\Hyhrobot.WebManagement.Application.csproj" />
     <ProjectReference Include="..\Hyhrobot.WebManagement.EntityFrameworkCore\Hyhrobot.WebManagement.EntityFrameworkCore.csproj" />
   </ItemGroup>

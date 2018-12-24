@@ -12,11 +12,13 @@ using Abp.Zero.Configuration;
 using Hyhrobot.WebManagement.Authentication.JwtBearer;
 using Hyhrobot.WebManagement.Configuration;
 using Hyhrobot.WebManagement.EntityFrameworkCore;
+using Hyhrobot.EventCloud.Application;
 
 namespace Hyhrobot.WebManagement
 {
     [DependsOn(
          typeof(WebManagementApplicationModule),
+         typeof(EventCloudApplicationModule),
          typeof(WebManagementEntityFrameworkModule),
          typeof(AbpAspNetCoreModule)
         ,typeof(AbpAspNetCoreSignalRModule)
@@ -40,10 +42,10 @@ namespace Hyhrobot.WebManagement
 
             // Use database for language management
             Configuration.Modules.Zero().LanguageManagement.EnableDbLocalization();
-
+           
             Configuration.Modules.AbpAspNetCore()
                  .CreateControllersForAppServices(
-                     typeof(WebManagementApplicationModule).GetAssembly()
+                     typeof(WebManagementApplicationModule).GetAssembly(),"v1"
                  );
 
             ConfigureTokenAuth();

@@ -20,7 +20,7 @@ namespace Hyhrobot.WebManagement.Web
             }
 
             var directoryInfo = new DirectoryInfo(coreAssemblyDirectoryPath);
-            while (!DirectoryContains(directoryInfo.FullName, "Hyhrobot.WebManagement.sln"))
+            while (!DirectoryContains(directoryInfo.FullName, "WebManagement.sln"))
             {
                 if (directoryInfo.Parent == null)
                 {
@@ -30,13 +30,13 @@ namespace Hyhrobot.WebManagement.Web
                 directoryInfo = directoryInfo.Parent;
             }
 
-            var webMvcFolder = Path.Combine(directoryInfo.FullName, "src", "Hyhrobot.WebManagement.Web.Mvc");
+            var webMvcFolder = Path.Combine(directoryInfo.FullName, "WebHost","Core", "Hyhrobot.WebManagement.Web.Mvc");
             if (Directory.Exists(webMvcFolder))
             {
                 return webMvcFolder;
             }
 
-            var webHostFolder = Path.Combine(directoryInfo.FullName, "src", "Hyhrobot.WebManagement.Web.Host");
+            var webHostFolder = Path.Combine(directoryInfo.FullName, "WebHost", "Core", "Hyhrobot.WebManagement.Web.Host");
             if (Directory.Exists(webHostFolder))
             {
                 return webHostFolder;
