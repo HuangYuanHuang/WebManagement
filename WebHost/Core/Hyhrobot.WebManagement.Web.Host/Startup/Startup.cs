@@ -67,22 +67,38 @@ namespace Hyhrobot.WebManagement.Web.Host.Startup
             services.AddSwaggerGen(options =>
             {
 
-                options.SwaggerDoc("v1", new Info { Title = "WebManagement API", Version = "v1" });
-                options.SwaggerDoc("v2", new Info { Title = "Event API", Version = "v2" });
-                //  options.DocInclusionPredicate((docName, description) => true);
-                options.DocInclusionPredicate((docName, apiDesc) =>
-                {
-                    return apiDesc.RelativePath.Contains(docName);
-                    //if (!apiDesc.TryGetMethodInfo(out MethodInfo methodInfo)) return false;
-                    //var versions = methodInfo.DeclaringType
-                    //  .GetCustomAttributes(true)
-                    //  .OfType<ApiVersionAttribute>()
-                    //  .SelectMany(attr => attr.Versions);
+                options.SwaggerDoc("V1", new Info { Title = "WebManagement API", Version = "V1" });
+                options.IncludeXmlComments(AppContext.BaseDirectory + @"/Hyhrobot.WebManagement.Application.xml");
 
-                    //return versions.Any(v => $"v{v.ToString()}" == docName);
+                SwaggerVersionData.SwaggerVersionMap.Values.ToList().ForEach(d =>
+                {
+                    options.SwaggerDoc(d.ToString(), new Info()
+                    {
+                        Title = d.Title,
+                        Version = d.ToString()
+                    });
                 });
-                //  options.OperationFilter<SwaggerOperationFilter>();
-                // options.DocumentFilter<ApplyTagDescriptions>();
+                options.DocInclusionPredicate((docName, description) =>
+                {
+                    // v1 所有接口
+                    if (docName == "V1")
+                    {
+                        return true;
+                    }
+                    var list = SwaggerVersionData.SwaggerVersionMap[docName];
+                    bool isPre = false;
+                    foreach (var item in list.Controllers)
+                    {
+                        if (description.RelativePath.Contains("/" + item.Name))
+                        {
+                            isPre = true;
+                            break;
+                        }
+                    }
+                    return isPre;
+                });
+
+                options.DocumentFilter<ApplyTagDescriptions>();
 
                 // Define the BearerAuth scheme that's in use
                 options.AddSecurityDefinition("bearerAuth", new ApiKeyScheme()
@@ -137,8 +153,12 @@ namespace Hyhrobot.WebManagement.Web.Host.Startup
             // Enable middleware to serve swagger-ui assets (HTML, JS, CSS etc.)
             app.UseSwaggerUI(options =>
             {
-                options.SwaggerEndpoint(_appConfiguration["App:ServerRootAddress"].EnsureEndsWith('/') + "swagger/v1/swagger.json", "WebManagement API V1");
-                options.SwaggerEndpoint(_appConfiguration["App:ServerRootAddress"].EnsureEndsWith('/') + "swagger/v2/swagger.json", "Event API V2");
+                options.SwaggerEndpoint(_appConfiguration["App:ServerRootAddress"].EnsureEndsWith('/') + "swagger/V1/swagger.json", "WebManagement API");
+                SwaggerVersionData.SwaggerVersionMap.Values.ToList().ForEach(d =>
+                {
+                    options.SwaggerEndpoint(_appConfiguration["App:ServerRootAddress"] + $"/swagger/{d.ToString()}/swagger.json", d.Title);
+
+                });
 
                 options.IndexStream = () => Assembly.GetExecutingAssembly()
                     .GetManifestResourceStream("Hyhrobot.WebManagement.Web.Host.wwwroot.swagger.ui.index.html");

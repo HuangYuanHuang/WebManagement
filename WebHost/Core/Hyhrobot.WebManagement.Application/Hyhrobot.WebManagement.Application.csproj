@@ -10,6 +10,10 @@
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <RootNamespace>Hyhrobot.WebManagement</RootNamespace>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>E:\CODE\GITHUB\WebManagement\WebManagement\WebHost\Core\Hyhrobot.WebManagement.Application\Hyhrobot.WebManagement.Application.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Hyhrobot.WebManagement.Core\Hyhrobot.WebManagement.Core.csproj" />
   </ItemGroup>

@@ -27,7 +27,7 @@ namespace Hyhrobot.EventCloud.Application
             IocManager.RegisterAssemblyByConvention(thisAssembly);
             Configuration.Modules.AbpAspNetCore()
                 .CreateControllersForAppServices(
-                    typeof(EventCloudApplicationModule).GetAssembly(),"v2"
+                    typeof(EventCloudApplicationModule).GetAssembly()
                 );
             //    DynamicApiControllerBuilder.For<IEventApplicationService>("tasksystem/task").Build();
             Configuration.Modules.AbpAutoMapper().Configurators.Add(
